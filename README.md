@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI婚恋契合度预测系统
 
-## Getting Started
+基于人工智能的多维度情感匹配分析系统，通过科学的数据分析和人工智能算法，结合传统东方文化，为用户提供专业、客观的恋爱与婚姻关系评估及建议。
 
-First, run the development server:
+## 功能特点
+
+- 🤖 AI智能分析
+- 📊 多维度评估
+- 🎯 精准匹配度计算
+- 🏮 传统文化结合
+- 📱 移动端适配
+- 🌓 暗色模式支持
+
+## 技术栈
+
+- Next.js 15.0.4
+- React 19
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Hook Form
+- Zod
+
+## 快速开始
+
+1. 安装依赖：
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 启动开发服务器：
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. 访问 [http://localhost:3000](http://localhost:3000) 查看应用。
 
-## Learn More
+## 项目结构
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/
+  ├── test/                # 测评功能
+  │   ├── page.tsx        # 测评页面
+  │   ├── questions.ts    # 问题配置
+  │   ├── utils.ts        # 工具函数
+  │   ├── components/     # 组件
+  │   └── results/        # 结果页面
+  ├── layout.tsx          # 布局组件
+  ├── page.tsx            # 首页
+  └── globals.css         # 全局样式
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 开发指南
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 使用 `pnpm dev` 启动开发服务器
+- 使用 `pnpm build` 构建生产版本
+- 使用 `pnpm start` 启动生产服务器
+- 使用 `pnpm lint` 运行代码检查
 
-## Deploy on Vercel
+## 部署
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+项目可以轻松部署到 Vercel 平台：
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/love-predictor)
+
+## 许可证
+
+MIT License
